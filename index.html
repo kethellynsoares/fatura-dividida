@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fatura Dividida — quem deve o quê no cartão</title>
+<meta name="description" content="Divide o cartão com alguém? O Fatura Dividida separa o que é seu e o que é da outra pessoa, acompanha as parcelas e mostra quanto sobra no mês.">
+<meta property="og:title" content="Fatura Dividida — quem deve o quê no cartão">
+<meta property="og:description" content="Separe a fatura, acompanhe as parcelas e saiba quanto sobra no mês. Entre na lista de espera.">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#topo"><img src="favicon.svg" alt="" width="30" height="30">Fatura Dividida</a>
+    <nav class="nav-links">
+      <a class="hide-sm" href="#como-funciona">Como funciona</a>
+      <a class="hide-sm" href="#duvidas">Dúvidas</a>
+      <a class="hide-sm" href="como-usar.html">Guia de uso</a>
+      <a class="btn btn-pri btn-sm js-waitlist" href="#">Quero usar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Para quem divide o cartão</span>
+        <h1>A fatura chegou. <em>Quanto é seu</em> e quanto é dos outros?</h1>
+        <p class="lead">O Fatura Dividida separa cada compra entre você e quem usa o seu cartão, lembra de quem é cada parcela até a última e mostra quanto sobra para você nos próximos meses.</p>
+        <div class="cta-row">
+          <a class="btn btn-pri js-waitlist" href="#">Entrar na lista de espera</a>
+          <a class="btn btn-ghost" href="#como-funciona">Ver como funciona</a>
+        </div>
+        <p class="cta-note">Sem pedir senha do banco. Seus dados ficam no seu aparelho.</p>
+      </div>
+
+      <!-- Tela de exemplo: valores e nomes fictícios -->
+      <div class="phone" role="img" aria-label="Exemplo do app: fatura de novembro separada entre você (R$ 1.284,90) e Rafa (R$ 612,40), com sobra de R$ 1.950,30">
+        <div class="phone-in">
+          <div class="ph-top"><span class="ph-month">Fatura de novembro</span><span>exemplo</span></div>
+          <div class="ph-split">
+            <div class="ph-box"><div class="ph-lbl">Seu</div><div class="ph-val me">R$ 1.284,90</div></div>
+            <div class="ph-box"><div class="ph-lbl">Do Rafa</div><div class="ph-val other">R$ 612,40</div></div>
+          </div>
+          <div class="ph-bar"><div style="width:68%;background:var(--pri)"></div><div style="width:32%;background:var(--acc)"></div></div>
+          <div class="ph-row"><div class="ph-name">Loja de Móveis<small>parcela 9 de 10</small></div><span class="tag other">Rafa</span><span class="ph-amt">389,90</span></div>
+          <div class="ph-row"><div class="ph-name">Supermercado<small>12/out</small></div><span class="tag me">meu</span><span class="ph-amt">214,37</span></div>
+          <div class="ph-row"><div class="ph-name">Seguro do carro<small>parcela 10 de 12</small></div><span class="tag other">Rafa</span><span class="ph-amt">222,50</span></div>
+          <div class="ph-row"><div class="ph-name">Farmácia<small>parcela 2 de 3</small></div><span class="tag me">meu</span><span class="ph-amt">90,17</span></div>
+          <div class="ph-sobra"><span>Sobra no mês</span><b>R$ 1.950,30</b></div>
+        </div>
+        <div class="ph-tagline">Rafa te deve R$ 612,40</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOR -->
+  <section class="alt">
+    <div class="wrap">
+      <h2>Dividir o cartão parece simples. Até a fatura chegar.</h2>
+      <p class="sec-lead">Cartão adicional para o companheiro, a mãe ou o filho, ou um cartão que ficou para trás depois da separação: no fim do mês, a conta é sempre a mesma.</p>
+      <div class="pains">
+        <div class="pain"><div class="q">“Isso aqui é meu ou é dele?”</div><p>Linha por linha, você confere a fatura tentando lembrar quem comprou o quê.</p></div>
+        <div class="pain"><div class="q">“Essa parcela ainda é da outra pessoa?”</div><p>Compras parceladas atravessam meses, e cada mês você refaz a mesma conta.</p></div>
+        <div class="pain"><div class="q">“Quanto vai sobrar pra mim?”</div><p>Com parcelas, contas fixas e repasses misturados, fica difícil saber se o mês fecha.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="center">
+        <h2>Como funciona</h2>
+        <p class="sec-lead">Três passos, uma vez por mês, ou sempre que quiser conferir a fatura aberta.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Importe a fatura</h3><p>Exporte a planilha da fatura no app do banco e abra no Fatura Dividida. Gastos fora do cartão, como Pix e dinheiro, você lança na mão.</p></div>
+        <div class="step"><h3>Marque de quem é</h3><p>Um toque troca o dono da compra. As parcelas já marcadas são reconhecidas sozinhas nos meses seguintes.</p></div>
+        <div class="step"><h3>Veja quanto sobra</h3><p>Entradas menos contas fixas menos as suas parcelas: a sobra de cada mês e quanto a outra pessoa te deve.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section class="alt">
+    <div class="wrap">
+      <h2>Tudo o que a planilha não faz sozinha</h2>
+      <p class="sec-lead">Feito por quem passou meses separando fatura em planilha, para não precisar mais.</p>
+      <div class="feats">
+        <div class="feat"><div class="ic">🔀</div><h3>Separação da fatura</h3><p>Seu total e o total da outra pessoa, mês a mês, sempre batendo com a fatura.</p></div>
+        <div class="feat"><div class="ic">🧾</div><h3>Parcelas até o fim</h3><p>O app sabe em que parcela cada compra está e até quando ela vai, para você e para a outra pessoa.</p></div>
+        <div class="feat"><div class="ic">📅</div><h3>Planejamento</h3><p>Projeção dos próximos meses: quanto entra, quanto sai e quanto sobra.</p></div>
+        <div class="feat"><div class="ic">💸</div><h3>A receber</h3><p>Quanto a outra pessoa te deve em cada fatura, com o detalhe de cada compra para mostrar a ela.</p></div>
+        <div class="feat"><div class="ic">📊</div><h3>Categorias e meses</h3><p>Para onde vai o seu dinheiro (mercado, transporte, saúde…) e a comparação entre os meses.</p></div>
+        <div class="feat"><div class="ic">📱</div><h3>Celular e computador</h3><p>Instala na tela inicial e funciona mesmo sem internet. Use o backup para levar os dados de um aparelho para outro.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section>
+    <div class="wrap center">
+      <h2>Para quem é</h2>
+      <p class="sec-lead">Para qualquer pessoa que paga uma fatura que não é só dela.</p>
+      <div class="who">
+        <span>Casais que dividem o cartão</span>
+        <span>Ex-casais com parcelas em aberto</span>
+        <span>Cartão adicional para pai, mãe ou filho</span>
+        <span>Amigos e quem divide a casa</span>
+        <span>Quem empresta o cartão “só dessa vez”</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACIDADE -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="privacy">
+        <div class="shield" aria-hidden="true">🔒</div>
+        <div>
+          <h2 style="margin-bottom:6px">Suas finanças continuam só suas</h2>
+          <p style="color:var(--ink2)">O Fatura Dividida não se conecta ao seu banco e não envia seus dados para nenhum servidor.</p>
+          <ul>
+            <li>Nunca pede senha do banco nem do cartão</li>
+            <li>Os dados ficam guardados no seu próprio aparelho</li>
+            <li>Senha opcional para abrir o app, com os dados criptografados</li>
+            <li>Backup em arquivo, que você guarda onde quiser (OneDrive, Google Drive…)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="duvidas">
+    <div class="wrap">
+      <div class="center"><h2>Dúvidas frequentes</h2><p class="sec-lead">Não achou a sua? Mande pelo botão da lista de espera.</p></div>
+      <div class="faq">
+        <details><summary>Funciona com o meu banco?</summary><p>Hoje a importação automática funciona com a planilha (CSV) da fatura do Nubank. Com outros bancos, você pode lançar as compras manualmente, e a importação de outros bancos está nos próximos passos. Conte na lista de espera qual é o seu banco: isso ajuda a decidir a ordem.</p></details>
+        <details><summary>Preciso informar a senha do banco?</summary><p>Não. Você mesma(o) exporta a planilha da fatura no app do banco e abre no Fatura Dividida. Nenhum acesso à sua conta é necessário.</p></details>
+        <details><summary>A outra pessoa precisa instalar alguma coisa?</summary><p>Não. Só você usa o app. Para cobrar, mostre a ela o detalhe do mês com cada compra e o total.</p></details>
+        <details><summary>E as compras parceladas antigas?</summary><p>Você marca de quem é uma vez. Nos meses seguintes, a mesma parcela é reconhecida e vai para a pessoa certa até a última.</p></details>
+        <details><summary>Funciona no celular?</summary><p>Sim. Ele abre no navegador do celular ou do computador e pode ser instalado na tela inicial como um aplicativo. Para levar os dados de um aparelho para outro, você usa o backup.</p></details>
+        <details><summary>Quanto vai custar?</summary><p>O preço ainda está sendo definido. Quem entrar na lista de espera fica sabendo primeiro e ajuda a decidir o que vem na primeira versão.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="final">
+        <h2>Pare de refazer a conta da fatura todo mês</h2>
+        <p>Entre na lista de espera e seja das primeiras pessoas a usar.</p>
+        <a class="btn js-waitlist" href="#">Entrar na lista de espera</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Fatura Dividida · <a href="como-usar.html">Guia de uso</a></span>
+    <span>Não é afiliado ao Nubank nem a nenhum banco. Nomes e valores das telas são exemplos.</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guia de uso — Fatura Dividida</title>
+<meta name="description" content="Passo a passo para usar o Fatura Dividida: importar a fatura, separar as compras, planejar o mês, backup e senha.">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="favicon.svg" alt="" width="30" height="30">Fatura Dividida</a>
+    <nav class="nav-links">
+      <a class="hide-sm" href="index.html">Início</a>
+      <a class="btn btn-pri btn-sm js-waitlist" href="#">Quero usar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap narrow doc">
+  <div class="doc-hero">
+    <span class="eyebrow">Guia de uso</span>
+    <h1>Como usar o Fatura Dividida</h1>
+    <p class="lead">Do primeiro acesso à rotina do mês: importar a fatura, separar o que é de cada um e saber quanto sobra.</p>
+    <div class="doc-actions">
+      <button class="btn btn-pri btn-sm" onclick="window.print()">Baixar em PDF</button>
+      <a class="btn btn-ghost btn-sm" href="index.html">Voltar ao site</a>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Sumário">
+    <strong>Neste guia</strong>
+    <ol>
+      <li><a href="#instalar">Abrir e instalar</a></li>
+      <li><a href="#configurar">Primeira configuração</a></li>
+      <li><a href="#importar">Importar a fatura</a></li>
+      <li><a href="#separar">Separar o que é de cada um</a></li>
+      <li><a href="#fora">Gastos fora do cartão</a></li>
+      <li><a href="#planejar">Planejar o mês</a></li>
+      <li><a href="#acompanhar">Acompanhar os gastos</a></li>
+      <li><a href="#backup">Backup e outros aparelhos</a></li>
+      <li><a href="#senha">Senha e privacidade</a></li>
+      <li><a href="#problemas">Problemas comuns</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="instalar">1. Abrir e instalar</h2>
+  <p>O Fatura Dividida funciona no navegador do celular ou do computador. Não precisa baixar nada de loja de aplicativos.</p>
+  <ol>
+    <li>Abra o link do app que você recebeu.</li>
+    <li><strong>No celular, instale na tela inicial:</strong>
+      <ul>
+        <li><strong>Android (Chrome):</strong> menu <span class="kbd">⋮</span> → <strong>Instalar app</strong> ou <strong>Adicionar à tela inicial</strong>.</li>
+        <li><strong>iPhone (Safari):</strong> botão Compartilhar → <strong>Adicionar à Tela de Início</strong>.</li>
+      </ul>
+    </li>
+    <li>A partir daí, abra sempre pelo ícone. Ele funciona mesmo sem internet.</li>
+  </ol>
+  <div class="tip warn"><b>No iPhone, use sempre o ícone.</b>O app da tela inicial guarda os dados separados do Safari. Se você usar um pouco em cada lugar, vai parecer que os dados sumiram.</div>
+
+  <h2 id="configurar">2. Primeira configuração</h2>
+  <p>Toque em <span class="kbd">⚙</span> (no topo, no celular) ou em <strong>Config</strong> (no menu, no computador) e preencha:</p>
+  <ul>
+    <li><strong>Outra pessoa que usa o seu cartão:</strong> o nome de quem divide a fatura com você, por exemplo “Rafa”. Esse nome aparece em todo o app.</li>
+    <li><strong>Dia de vencimento da fatura:</strong> é por ele que o app sabe qual é a próxima fatura.</li>
+    <li><strong>Limite mensal:</strong> quanto você quer gastar no cartão por mês. O app avisa quando você chegar perto.</li>
+    <li><strong>Senha (opcional):</strong> veja a seção <a href="#senha">Senha e privacidade</a>.</li>
+  </ul>
+
+  <h2 id="importar">3. Importar a fatura</h2>
+  <h3>Baixar a planilha no app do Nubank</h3>
+  <ol>
+    <li>Abra o app do Nubank → <strong>Cartão de crédito</strong> → <strong>Faturas</strong>.</li>
+    <li>Escolha a fatura (fechada ou aberta).</li>
+    <li>Role até o fim → <strong>Exportar planilha</strong>. Um arquivo <span class="kbd">.csv</span> é salvo no seu aparelho.</li>
+  </ol>
+  <h3>Abrir no Fatura Dividida</h3>
+  <ol>
+    <li>Vá em <strong>Importar</strong>.</li>
+    <li>Toque na área de envio e escolha o arquivo. No computador, também dá para arrastar o arquivo até ela.</li>
+    <li>Uma mensagem confirma quantas compras entraram e em qual fatura.</li>
+  </ol>
+  <div class="tip"><b>Não renomeie o arquivo.</b>O nome que o banco dá (por exemplo <span class="kbd">Nubank_2026-11-06.csv</span>) diz de qual fatura ele é. Se você trocar o nome, o app adivinha pela data das compras.</div>
+  <div class="tip"><b>Pode importar quantas vezes quiser.</b>Importe a fatura aberta toda semana: as compras que já estavam no app não se repetem.</div>
+  <p><strong>Outros bancos:</strong> por enquanto, lance as compras manualmente (veja <a href="#fora">Gastos fora do cartão</a>).</p>
+
+  <h2 id="separar">4. Separar o que é de cada um</h2>
+  <p>Cada compra tem um selo: <strong>meu</strong> ou o nome da outra pessoa. <strong>Toque no selo para trocar.</strong></p>
+  <ul>
+    <li><strong>Parcelas:</strong> marque uma vez. Nas próximas faturas, a mesma parcela entra sozinha com o mesmo dono, até a última.</li>
+    <li><strong>Compras que se repetem</strong> (por exemplo, um seguro que só a outra pessoa paga): depois que você marca, o app costuma reconhecer sozinho nas faturas seguintes. Só não acontece se essa mesma compra já tiver sido marcada como sua alguma vez.</li>
+    <li><strong>Conferir:</strong> em <strong>Gastos</strong>, use o filtro <em>Só meus</em> ou <em>Só de [nome]</em> para revisar a fatura.</li>
+  </ul>
+  <p>No <strong>Início</strong>, os números contam só os seus gastos. O que é da outra pessoa aparece separado, no cartão “De [nome]” e na faixa do fim da lista. Toque na faixa para ver cada compra e mostrar à pessoa.</p>
+
+  <h2 id="fora">5. Gastos fora do cartão</h2>
+  <p>Pix, dinheiro, boleto: vá em <strong>Gastos</strong> → <strong>Adicionar gasto</strong>.</p>
+  <ol>
+    <li>Preencha o nome, o valor, a categoria, a data e o mês de referência.</li>
+    <li>Marque <strong>Recorrente</strong> se o gasto se repete todo mês.</li>
+    <li>Marque <strong>É de [nome]</strong> se o gasto for da outra pessoa e ela for te pagar.</li>
+    <li>Toque em <span class="kbd">+</span>.</li>
+  </ol>
+
+  <h2 id="planejar">6. Planejar o mês</h2>
+  <p>A tela <strong>Planejamento</strong> mostra, para cada uma das próximas faturas, a conta:</p>
+  <p class="tip"><b>Entradas − Gastos fixos − Suas parcelas = Sobra</b>e, logo abaixo, quanto a outra pessoa te deve naquele mês.</p>
+  <h3>Preencha uma vez</h3>
+  <ul>
+    <li><strong>Entradas mensais:</strong> salário, vale-refeição, pensão etc.</li>
+    <li><strong>Gastos fixos mensais:</strong> aluguel, luz, internet, plano de saúde… Para as contas que já vêm <em>no cartão</em> (celular, streaming), escreva <span class="kbd">(no cartão)</span> no nome, por exemplo “Spotify (no cartão)”. Assim o app não conta duas vezes quando a fatura já foi importada.</li>
+    <li><strong>Parcelas:</strong> entram sozinhas ao importar a fatura. Para cadastrar uma à mão, informe o número da parcela, o total, a fatura em que ela aparece e de quem é.</li>
+  </ul>
+  <h3>Como ler os meses</h3>
+  <ul>
+    <li><strong>Fatura aberta • parcial:</strong> já tem compras importadas. O app usa o valor real, e a sobra ainda pode diminuir até a fatura fechar.</li>
+    <li><strong>Meses seguintes:</strong> são estimativas com as parcelas que já existem e os seus fixos. Novas compras ainda não entram.</li>
+    <li><strong>Toque em um mês</strong> para ver quais parcelas caem nele, as suas e as da outra pessoa.</li>
+  </ul>
+
+  <h2 id="acompanhar">7. Acompanhar os gastos</h2>
+  <ul>
+    <li><strong>Início:</strong> seus gastos na fatura escolhida, quanto falta para o limite e o que é da outra pessoa.</li>
+    <li><strong>Categorias:</strong> para onde foi o seu dinheiro no mês (mercado, transporte, saúde…).</li>
+    <li><strong>Comparar:</strong> os últimos meses lado a lado e a previsão das contas recorrentes.</li>
+  </ul>
+
+  <h2 id="backup">8. Backup e outros aparelhos</h2>
+  <p>Seus dados ficam guardados <strong>só no aparelho</strong> em que você usa o app. O backup serve para não perder nada e para levar os dados de um aparelho para outro.</p>
+  <h3>Salvar</h3>
+  <ol>
+    <li>Quando há algo novo sem backup, aparece um aviso amarelo no <strong>Início</strong>. Toque em <strong>Salvar backup</strong> (ou vá em Config → Salvar).</li>
+    <li><strong>No celular</strong> abre o “Compartilhar”: escolha o Google Drive, o OneDrive ou outro lugar seguro.</li>
+    <li><strong>No computador</strong> o arquivo vai para Downloads: mova para a sua pasta na nuvem.</li>
+  </ol>
+  <h3>Usar em outro aparelho</h3>
+  <ol>
+    <li>No outro aparelho, abra o app → Config → <strong>Importar backup</strong>.</li>
+    <li>Escolha o arquivo mais recente. O nome tem data e hora, por exemplo <span class="kbd">financas-backup-2026-11-06-1830.json</span>.</li>
+  </ol>
+  <div class="tip"><b>Nada é apagado na importação.</b>Os dados do backup são juntados aos do aparelho. O planejamento e as configurações vêm do lado alterado por último.</div>
+  <div class="tip warn"><b>Apagou algo?</b>Salve um backup novo logo depois e importe esse backup nos outros aparelhos. Se importar um backup antigo, o que você apagou volta.</div>
+
+  <h2 id="senha">9. Senha e privacidade</h2>
+  <ul>
+    <li>O app <strong>não se conecta ao seu banco</strong> e nunca pede senha do banco ou do cartão.</li>
+    <li>Nada é enviado para servidores: os dados ficam no seu aparelho e no backup que você guarda.</li>
+  </ul>
+  <h3>Criar uma senha</h3>
+  <ol>
+    <li>Config → <strong>Senha deste aparelho</strong> → <strong>Criar senha</strong> (mínimo de 4 caracteres).</li>
+    <li>A partir daí, o app pede a senha ao abrir e os dados ficam <strong>criptografados</strong> no aparelho.</li>
+    <li>O app bloqueia sozinho depois de 1 minuto em segundo plano ou 10 minutos sem uso. O <span class="kbd">🔒</span> bloqueia na hora.</li>
+  </ol>
+  <div class="tip"><b>A senha vale por aparelho.</b>Crie uma no celular e outra no computador (podem ser iguais). Uma senha com letras e números é mais segura que uma só com números.</div>
+  <div class="tip warn"><b>Esqueceu a senha?</b>Toque em “Esqueci a senha” na tela de entrada. Os dados daquele aparelho são apagados e você importa o seu último backup.</div>
+
+  <h2 id="problemas">10. Problemas comuns</h2>
+  <h3>Importei e as compras foram para o mês errado</h3>
+  <p>Provavelmente o arquivo foi renomeado. Baixe de novo no app do banco e importe sem mudar o nome.</p>
+  <h3>Uma compra ficou com a pessoa errada</h3>
+  <p>Toque no selo da compra para trocar. Se for parcela, as próximas seguem o dono novo a partir da próxima importação.</p>
+  <h3>Abri o app e está vazio</h3>
+  <p>Isso acontece em outro aparelho, depois de limpar os dados do navegador, em janela anônima ou, no iPhone, abrindo pelo Safari em vez do ícone. Importe o seu último backup.</p>
+  <h3>A sobra está diferente do que eu esperava</h3>
+  <p>Confira as <strong>entradas</strong> e os <strong>gastos fixos</strong> no Planejamento e veja se as contas que vêm no cartão têm “(no cartão)” no nome. Toque no mês para conferir as parcelas.</p>
+
+  <div class="doc-actions no-print" style="margin:44px 0 12px">
+    <a class="btn btn-pri js-waitlist" href="#">Entrar na lista de espera</a>
+    <a class="btn btn-ghost" href="index.html">Voltar ao site</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Fatura Dividida</span>
+    <span>Não é afiliado ao Nubank nem a nenhum banco.</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+</body>
+</html>
