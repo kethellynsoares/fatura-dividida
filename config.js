@@ -4,7 +4,7 @@ const CONFIG = {
   // Seu WhatsApp com DDI + DDD, só números. Ex.: '5581999999999'
   whatsapp: '5581994854265',
   // Ou o link de um formulário (Google Forms, Tally…). Ex.: 'https://forms.gle/xxxx'
-  formulario: '',
+  formulario: 'https://forms.gle/xiKXXtZnyaLkzapZ9',
   // Mensagem que já vem escrita no WhatsApp
   mensagem: 'Oi! Quero entrar na lista de espera do Fatura Dividida.'
 };
