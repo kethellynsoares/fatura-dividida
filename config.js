@@ -2,7 +2,7 @@
 // Preencha UM dos dois. Se os dois estiverem preenchidos, o formulário tem prioridade.
 const CONFIG = {
   // Seu WhatsApp com DDI + DDD, só números. Ex.: '5581999999999'
-  whatsapp: '',
+  whatsapp: '5581994854265',
   // Ou o link de um formulário (Google Forms, Tally…). Ex.: 'https://forms.gle/xxxx'
   formulario: '',
   // Mensagem que já vem escrita no WhatsApp
